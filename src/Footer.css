@@ -30,6 +30,7 @@ footer{
     border: 1px solid #2478f8;
     margin-top: 20px;
     position: relative;
+   
 }
 
 .footerContainer .container {
@@ -44,6 +45,9 @@ footer{
    flex-direction: column;
    align-items: center;
       margin-bottom: 30px;
+    /* adjust the width of the favcons to separate  */
+      width: 400px;  
+     
   
 }
 .IconEach .detail{
