@@ -1,0 +1,178 @@
+.loading{
+    margin-top: 30px;
+    font-size: 15px;
+    color:white;
+}
+
+.containerAllSkilss{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90vw;
+ 
+    margin-top: 70px;
+    height: 400px;
+  
+}
+
+.containerAllSkilss {
+  border: 2px solid #2478f8;
+  animation: pulse 2s infinite;
+  width:100%;
+  height: 450px;
+}
+
+@keyframes pulse {
+  0% {
+    border-color: #2478f8;
+  }
+  50% {
+    border-color: #eb8dcc;
+  
+  }
+  100% {
+    border-color: #2478f8;
+  }
+}
+
+.softSkills{
+  
+     width:100%;
+     height: 450px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     border-right: 2px solid gray;
+    
+}
+  /* Cool border */
+ .softSkills {
+     border: none;
+     box-shadow: 0 0 10px rgba(36, 120, 248, 0.7); 
+       
+    
+   }
+
+.techSkills{
+ 
+   width:100%;
+   height: 450px;
+    display: flex;
+     flex-direction: column;
+     align-items: center;
+ 
+}
+
+ .techSkills {
+     border: none;
+     box-shadow: 0 0 10px rgba(36, 120, 248, 0.7);
+     
+    
+   }
+ li{
+    list-style: none;
+    margin-top: 10px;
+    color:white;
+    
+    font-size: 11px;
+}
+ul{
+    margin-top: 10px;
+   
+}
+.skillTitle{
+margin-top: 50px;
+font-size: 40px;
+color:white;
+}
+
+.checkIcon{
+    color:green;
+    padding-right: 20px;
+    font-size: 15px;
+
+}
+
+.listItem {
+      display: inline-block;
+      overflow: hidden;
+    
+      white-space: nowrap;
+      animation: typing 1s steps(40, end), blink-caret 75s step-end infinite;
+      color:white;
+
+    }
+
+    @keyframes typing {
+      from {
+        width: 0;
+      }
+      to {
+        width: 10%;
+      }
+    }
+
+    @keyframes blink-caret {
+      from, to {
+        border-color: transparent;
+      }
+      10% {
+        border-color: transparent /* Change the color as needed */
+      }
+    }
+
+
+
+@media screen and (max-width: 768px) {
+  .loading {
+    font-size: 10px;
+  }
+
+  .containerAllSkilss {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* width  of the contaienr all skills  */
+    width: 265px; 
+    margin: 10px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    /* //moving postion from left to right  */
+    margin-left: -10px; 
+   
+  
+    
+  }
+
+  .skillTitle {
+    font-size: 15px;
+    margin:10px;
+  }
+
+  .listItem {
+    font-size: 5px; /* Adjust the font size as needed */
+  }
+
+  .checkIcon {
+    font-size: 6px; /* Adjust the font size as needed */
+    padding-right: 10px; /* Adjust the padding as needed */
+  }
+
+  .softSkills {
+    height: 225px;
+    margin-bottom: 10px;
+  }
+
+  .techSkills {
+    height: 225px;
+  }
+  ul{
+  /* with of the ul  */
+    width: 100%;
+    padding-left: 10px;  
+  }
+  
+  .listItem{
+        width: 200px;
+  }
+}

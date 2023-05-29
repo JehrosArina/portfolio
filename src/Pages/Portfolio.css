@@ -1,0 +1,235 @@
+.postfolioContainer{
+ display: flex;
+ flex-direction: column;
+ align-items: flex-start;
+
+ 
+}
+
+
+
+.images{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+
+}
+.images .imageIcon{
+    width: 450px;
+    height: 300px;
+    padding: 0 5px;
+}
+
+.Title h1{
+    color:white;
+    margin: 20px 0;
+}
+.postfolioContainer p{
+    margin: 20px 0;
+    color:white;
+}
+
+.postfolioContainer  a{
+    margin: 10px 0;
+    color:white;
+    margin-left: 10px;
+}
+.javascriptOrjectTitle{
+    color:white;
+}
+
+.projectAssignmentSection{
+ 
+ width: 87vw;
+ padding: 10px;
+}
+
+ .projectAssignmentSection {
+     border: none;
+     box-shadow: 0 0 10px rgba(36, 120, 248, 0.7);  
+   }
+
+.projectAssignmentSection {
+  border: 2px solid #2478f8;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    border-color: #2478f8;
+  }
+  50% {
+    border-color: #eb8dcc;
+  
+  }
+  100% {
+    border-color: #2478f8;
+  }
+}
+   
+.displayGitHubProject{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ margin-top: 20px;
+ padding:0 60px;
+}
+.projectName{
+    color: white;
+}
+
+.downloadCode{
+  
+   margin-top: 5px;
+   background-color: transparent;
+   color: #2478f8;
+   font-size: 15px;
+   text-decoration: none;
+   padding: 10px 30px;
+   border-radius: 5px;
+   border: 1px solid #2478f8;
+   cursor: pointer;
+}
+.downloadCode:hover{
+    background-color: #2478f8;
+    color:white;
+}
+
+.InprogressProjectSection{
+    margin-top: 20px;
+     width: 87vw;
+     
+}
+
+.remindertext{
+    color:White;
+    margin:10px 0;
+}
+.loadingData{
+    margin-top: 40px;
+   color:white;
+    font-size: 15px;
+}
+.aLink{
+    background-color: transparent;
+   color: #2478f8;
+   font-size: 10px;
+   text-decoration: none;
+   padding: 10px 30px;
+   border-radius: 5px;
+   border: 1px solid #2478f8;
+   margin-left: 10px;
+   cursor: pointer;
+}
+.linka{
+  margin:20px 0;
+  margin-right: 50px;
+}
+.aLink:hover{
+   
+    background-color: #2478f8;
+    color:white;
+}
+.inprogressLink{
+    margin: 20px 0;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .loadingData{
+  font-size: 10px;  
+ width: 100%;
+}
+ 
+    .container{
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+  }
+
+  .postfolioContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+
+  .Title h1{
+    font-size: 20px;
+    padding-right: 30px;
+  }
+
+  .container .postfolioContainer p{
+    font-size: 10px;
+    width: 100%;
+    padding: 10px;
+
+  }
+  .images{
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+     /* // movign hte image left  */
+    padding-right:50px;
+  }
+ 
+  .images .imageIcon{
+    width: 250px;
+    height: 100px;
+   
+  }
+
+
+  .projectAssignmentSection{
+    
+    width: 90%;
+    margin-right: 50px;
+  }
+
+  .displayGitHubProject{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  h1{
+    align-items: center;
+  }
+  .linkBlog{
+    margin: 20px 0;
+    margin-right: 50px;
+  }
+ 
+.projectAssignmentSection h1{
+  font-size: 12px;
+
+}
+.displayGitHubProject{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.displayGitHubProject .projectName{
+  font-size: 10px;
+
+}
+.displayGitHubProject .downloadCode{
+  width: 100px;
+  font-size: 7px;
+  color:white;
+}
+
+.InprogressProjectSection p{
+  font-size: 10px;
+  padding: 0 10px;
+}
+ .inprogressLink{
+ margin-right: 50px;
+ }
+  }

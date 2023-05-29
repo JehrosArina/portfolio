@@ -1,0 +1,148 @@
+.navbar-layout {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100vw;
+}
+
+.navbar-layout header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 60px;
+}
+
+.navbar-layout header h1 {
+  font-size: 40px;
+  color: #0266ff;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 700px;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.nav-link {
+  color: white;
+}
+
+.nav-link.active {
+  background-color: #0266ff;
+  padding: 0 20px;
+}
+
+main {
+  width: 100vw;
+  padding: 0 60px;
+}
+
+.hamburger-menu {
+  display: none;
+}
+
+
+/* Slide the logo */
+.navbar-layout header h1 {
+  font-size: 40px;
+  color: #0266ff;
+  opacity: 0;
+  animation: slide-in 1s forwards;
+}
+
+@keyframes slide-in {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Media Query */
+@media screen and (max-width: 768px) {
+  /* Hamburger menu */
+   .navigation{
+    display: none;
+   }
+
+  .hamburger-menu {
+   display: block;
+    color:yellow;
+     position: absolute;
+    right: 80px;
+    font-size: 15px;
+    top:15px;
+ 
+    
+  }
+  header{
+    width:300px;
+    margin-left: -35px;
+  }
+  .navbar-layout header .slide-in{
+    margin-top: -15px; 
+    font-size: 30px;
+    
+  }
+  .menu-container{
+    position: relative;
+
+  }
+  
+@keyframes slideIn {
+  
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  
+  }
+} 
+
+.navigation{
+  height: 100vh;
+
+}
+
+  .menu-container nav{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style-type: none;
+  padding: 100px;
+ font-weight: none;
+  background-color:#192140;
+  position: absolute;
+  top: -20px;
+  /* display slide from right to left  by setting left to 36px*/
+    left:195px;    
+    width: 450px;
+    transform: translateX(100%);
+    animation: slideIn 0.3s ease-in-out forwards;
+    z-index: 1;
+   
+  
+  }
+   .close-button {
+  font-size: 10px;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  right:100px;
+  font-size: 12px;
+  border-radius: 30px;
+ 
+}
+
+
+
+    
+}
+
+

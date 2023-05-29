@@ -1,0 +1,237 @@
+.myProfile{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100vw;
+}
+
+
+.myProfile .name h1{
+ font-size: 50px;
+ color:white;
+ margin-bottom: 20px;
+}
+span{
+    color:#4f5b6c;
+}
+.myProfile  .position{
+    margin-top: 10px;
+    color: #2478f8;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.myProfile .description{
+    margin-top: 10px;
+    color:white;
+    font-size: 14px;
+    line-height: 17px;
+    
+}
+.image{
+    
+    width: 800px;
+   
+   
+}
+ .imageIcon{
+  
+   height: 600px;
+   width: 1020px;
+   
+  
+}
+.downloadContainer{
+    margin-top: 30px;
+}
+.download {
+   background-color: transparent;
+   color: #2478f8;
+   font-size: 15px;
+   text-decoration: none;
+   padding: 10px 30px;
+   border-radius: 5px;
+   border: 1px solid #2478f8;
+  
+}
+.downloadContainer button{
+   background-color: transparent;
+   color: #2478f8;
+   font-size: 15px;
+   text-decoration: none;
+   padding: 10px 30px;
+   border-radius: 5px;
+   border: 1px solid #2478f8;
+   margin-left: 10px;
+   cursor: pointer;
+  
+}
+.downloadResume.active{
+    background-color: #2478f8;
+}
+.download.active{
+    background-color: #2478f8;
+}
+
+
+.Icons{
+    margin-top: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+ 
+ 
+}
+
+.Icons .links{
+    color:white;
+    background-color: transparent;
+    border: 2px solid #2478f8;
+    padding: 0 5px;
+    padding: 10px;
+    margin-right: 20px;
+   font-size: 10px;
+   width: 50px;
+   height: 50px;
+   border-radius: 30px;
+
+}
+
+.imageIcon{
+  margin-top: 20px;
+}
+
+.name{
+    color:#2478f8;
+}
+
+
+/* Typing animation for web developer */
+
+ .typing-animation {
+      display: inline-block;
+      overflow: hidden;
+    
+      white-space: nowrap;
+      animation: typing 4s steps(40, end), blink-caret 75s step-end infinite;
+      color:#2478f8;
+    }
+
+    @keyframes typing {
+      from {
+        width: 0;
+      }
+      to {
+        width: 10%;
+      }
+    }
+
+    @keyframes blink-caret {
+      from, to {
+        border-color: transparent;
+      }
+      10% {
+        border-color: transparent /* Change the color as needed */
+      }
+    }
+
+
+    /* running lights on my button border  */
+.downloadResume {
+  border: 2px solid red;
+  animation: running-light 2s infinite;
+}
+
+    @keyframes running-light {
+  0% {
+    border-color: red;
+  }
+  15% {
+    border-color: rgb(225, 155, 14);
+  }
+  30% {
+    border-color: green;
+  }
+  85% {
+    border-color: blue;
+  }
+  100% {
+    border-color: red;
+  }
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+.myProfile{
+  width:250px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.description{
+width:270px;
+
+}
+.description .animationText{
+  font-size: 10px;
+}
+.name{
+  font-size: 30px;
+}
+ .myProfile .nameHeader {
+    font-size: 35px;
+  }
+
+  .myProfile .name .typing-animation{
+    font-size: 20px;
+  }
+  main{
+  padding-left: 30px;
+}
+
+.downloadContainer{
+  display: flex;
+  width: 65vw;
+  height: 100px;
+  padding:10px;
+}
+.downloadContainer button{
+
+  height: 30px;
+  font-size: 7px;
+  width: 100%;
+    padding:0;
+    color:white;
+}
+.downloadContainer a{
+ 
+  height: 30px;
+  font-size: 8px;
+  width: 80%;
+  color:white;
+}
+
+.image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 78vw;
+}
+.image .imageIcon{
+  margin-left: 90px;
+  width: 580px;
+  height: 350px;
+  
+}
+.Icons{
+  margin:0;
+}
+
+
+}
+
+

@@ -1,0 +1,176 @@
+.formContainer{
+    display: flex;
+    margin-top: 30px;
+}
+
+form{
+ 
+    width: 73%;
+    height: 370px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 20px;
+    padding-top: 20px;
+    
+}
+.rightPortion .contactInfo{
+    color:gray;
+}
+
+form{
+  border: none;
+  box-shadow: 0 0 10px rgba(36, 120, 248, 0.7);
+}
+
+/* animation for border in form  color  */
+form {
+  border: 2px solid #2478f8;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    border-color: #2478f8;
+  }
+  50% {
+    border-color: #eb8dcc;
+  
+  }
+  100% {
+    border-color: #2478f8;
+  }
+}
+
+/* Contact info animation typing  */
+
+   
+
+
+label{
+ margin-top: 10px;
+ color:white;
+ 
+}
+input{
+    width: 600px;
+    height: 40px;
+   padding: 10px;
+   margin: 10px 0;
+}
+textarea{
+ width: 600px;
+  height: 140px;
+  padding: 10px;
+  margin: 10px 0;
+}
+.btn{
+    width: 150px;
+    margin-top: 10px;
+     background-color: transparent;
+   color: #2478f8;
+   font-size: 15px;
+   text-decoration: none;
+   padding: 10px 30px;
+   border-radius: 5px;
+   border: 1px solid #2478f8;
+   cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #2478f8;
+    color: white;
+}
+.rightPortion{
+     
+       width: 100%;
+           
+}
+h1{
+    margin-top: 40px;
+    color:#2478f8;
+}
+
+.contactInfo{
+    width: 100%;
+    margin-top: 20px;
+    color:white;
+    
+}
+
+.favIcons{
+    margin-top: 50px;
+
+}
+
+.favIcons .links{
+    color:white;
+    background-color: transparent;
+    border: 2px solid rgb(53, 52, 52);
+    padding: 0 5px;
+    padding: 10px;
+    margin-right: 20px;
+   font-size: 10px;
+   width: 40px;
+   height: 40px;
+   border-radius: 20px;
+}
+
+.message{
+    color: white;
+    font-size: 13px;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+  .formContainer{
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+ 
+  form{
+   
+    width: 70vw;
+    margin-right: 47px;
+   
+  }
+  form input{
+    width: 220px;
+    font-size: 10px;
+  }
+   form textarea{
+     width: 220px;
+    font-size: 10px;
+  }
+  .rightPortion h1{
+    font-size: 22px;
+  }
+
+  .rightPortion .contactInfo {
+    font-size: 10px;
+    color:white;
+  }
+  
+  .contactInfo1 {
+    font-size: 10px;
+    color:white;
+  }
+  .btn{
+    width: 100px;
+    height: 35px;
+    font-size: 10px;
+    
+  }
+
+  .favIcons{
+    margin-bottom: 10px;
+  }
+  .message{
+    font-size: 8px;
+  }
+  }
