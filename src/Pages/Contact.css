@@ -24,7 +24,7 @@ form{
 }
 
 /* animation for border in form  color  */
-form {
+/* form {
   border: 2px solid #2478f8;
   animation: pulse 2s infinite;
 }
@@ -40,7 +40,7 @@ form {
   100% {
     border-color: #2478f8;
   }
-}
+} */
 
 /* Contact info animation typing  */
 
@@ -135,16 +135,17 @@ h1{
  
   form{
    
-    width: 70vw;
-    margin-right: 47px;
+    width: 80vw;
+  
+   
    
   }
   form input{
-    width: 220px;
+    width: 240px;
     font-size: 10px;
   }
    form textarea{
-     width: 220px;
+     width: 240px;
     font-size: 10px;
   }
   .rightPortion h1{

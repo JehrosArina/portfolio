@@ -20,10 +20,8 @@ function App() {
     createRoutesFromElements(
       <Route path="/" element={<NavBarLayout />}>
         <Route index element={<Home />} />
-       
-         <Route path="about" element={<About  />} />
-    
-         <Route path="service"element={<Services  />}/>
+        <Route path="about" element={<About  />} />
+        <Route path="service"element={<Services  />}/>
         <Route path="portfolio" element={<Porfolio />} />
         <Route path="contact" element={<Contact />} />     
            

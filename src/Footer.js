@@ -21,6 +21,7 @@ const Footer = () => {
     <div className='footerContainer'>
 
        <div className='container1'>
+
         <div className='IconEach'>
         < div className='favcon'>
            <FaPhone onClick={handlePhoneClick}/>
@@ -45,6 +46,8 @@ const Footer = () => {
             </span>
      </div>
 </div>
+
+
  <div className='IconEach'>
           <div className='favcon'>  
              <FaMapMarker onClick={handleMapMarkerClick}/>

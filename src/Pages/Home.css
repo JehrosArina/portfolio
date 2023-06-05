@@ -42,7 +42,7 @@ span{
   
 }
 .downloadContainer{
-    margin-top: 30px;
+    margin-top: 20px;
 }
 .download {
    background-color: transparent;
@@ -66,36 +66,39 @@ span{
    cursor: pointer;
   
 }
-.downloadResume.active{
+.downloadResume:hover{
     background-color: #2478f8;
+    color:white;
 }
-.download.active{
+.download:hover{
     background-color: #2478f8;
+     color:white;
 }
 
 
 .Icons{
-    margin-top: 50px;
+    margin-top: 10px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
- 
- 
+    width: 290px;
+    height: 170px;
+   width: 100%;
+   
 }
 
 .Icons .links{
     color:white;
-    background-color: transparent;
     border: 2px solid #2478f8;
-    padding: 0 5px;
-    padding: 10px;
+    padding: 15px; 
     margin-right: 20px;
-   font-size: 10px;
-   width: 50px;
-   height: 50px;
-   border-radius: 30px;
+    font-size: 15px;
+    border-radius: 50px;
+    
 
 }
+
+
 
 .imageIcon{
   margin-top: 20px;
@@ -113,7 +116,7 @@ span{
       overflow: hidden;
     
       white-space: nowrap;
-      animation: typing 4s steps(40, end), blink-caret 75s step-end infinite;
+      animation: typing 2s steps(40, end), blink-caret 75s step-end infinite;
       color:#2478f8;
     }
 
@@ -150,10 +153,10 @@ span{
     border-color: rgb(225, 155, 14);
   }
   30% {
-    border-color: green;
+    border-color: rgb(81, 91, 81);
   }
   85% {
-    border-color: blue;
+    border-color: rgb(149, 191, 10);
   }
   100% {
     border-color: red;
@@ -161,7 +164,12 @@ span{
 }
 
 
-
+.description .animationText{
+  font-style: oblique;
+  font-weight: 900;
+  line-height: 20px;
+  padding: 20px 0;
+}
 
 @media screen and (max-width: 768px) {
 .myProfile{
@@ -172,11 +180,18 @@ span{
 }
 
 .description{
-width:270px;
+width: 100%;
+
+
 
 }
 .description .animationText{
   font-size: 10px;
+
+  width: 300px;
+
+ 
+  
 }
 .name{
   font-size: 30px;
@@ -222,13 +237,27 @@ width:270px;
   width: 78vw;
 }
 .image .imageIcon{
-  margin-left: 90px;
-  width: 580px;
-  height: 350px;
+  width: 900px;
+  height: 450px;
+  margin-left: 160px;
   
 }
+
+
 .Icons{
-  margin:0;
+  
+
+  height: 50px;
+
+}
+
+.Icons .links{
+
+  padding: 15px;
+}
+.typing-animation{
+  color: white;
+ 
 }
 
 

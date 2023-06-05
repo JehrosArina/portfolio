@@ -44,28 +44,34 @@
  padding: 10px;
 }
 
- .projectAssignmentSection {
-     border: none;
-     box-shadow: 0 0 10px rgba(36, 120, 248, 0.7);  
-   }
 
-.projectAssignmentSection {
-  border: 2px solid #2478f8;
-  animation: pulse 2s infinite;
+
+/* animation lights for the download button each  */
+
+
+.downloadCode {
+  border: 2px solid red;
+  animation: running-light 2s infinite;
 }
 
-@keyframes pulse {
+    @keyframes running-light {
   0% {
-    border-color: #2478f8;
+    border-color: red;
   }
-  50% {
-    border-color: #eb8dcc;
-  
+  15% {
+    border-color: rgb(225, 155, 14);
+  }
+  30% {
+    border-color: rgb(81, 91, 81);
+  }
+  85% {
+    border-color: rgb(149, 191, 10);
   }
   100% {
-    border-color: #2478f8;
+    border-color: red;
   }
 }
+
    
 .displayGitHubProject{
  display: flex;
@@ -73,9 +79,12 @@
  align-items: center;
  margin-top: 20px;
  padding:0 60px;
+
 }
 .projectName{
     color: white;
+    width: 300px; 
+
 }
 
 .downloadCode{
@@ -143,10 +152,11 @@
 }
  
     .container{
-  
+    width: 90vw;;
     display: flex;
     flex-direction: column;
     align-items: center;
+    
    
   }
 
@@ -155,6 +165,7 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
+    
   }
 
 
@@ -197,6 +208,11 @@
     align-items: center;
     width: 100%;
   }
+  .projectName{
+    color: white;
+    width: 300px; 
+    text-align: center;
+}
 
   h1{
     align-items: center;

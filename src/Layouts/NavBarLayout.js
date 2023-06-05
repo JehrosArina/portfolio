@@ -25,9 +25,12 @@ const NavBarLayout = () => {
   };
 
   return (
+    // craeted a div to displable the horizontal swipe 
+    <div className="disable-swipe">  
+    
     <div className="navbar-layout">
       <header>
-        <h1 className="slide-in">Jehros</h1>
+        <h1 className="slide-in">Sorj</h1>
         <nav className="navigation">
           
            <NavLink className='nav-link' style={style} to='/'>Home</NavLink>
@@ -45,7 +48,7 @@ const NavBarLayout = () => {
           <div className="menu-container">
            
             <nav className='navigation'>
-              <NavLink className='nav-link close-button' to='/' onClick={closeMenu}><FaTimes /></NavLink>
+              {/* <NavLink className='nav-link close-button' to='/' onClick={closeMenu}><FaTimes /></NavLink> */}
               <NavLink className='nav-link' style={style} to='/' onClick={closeMenu}>Home</NavLink>
               <NavLink className='nav-link' style={style} to='about' onClick={closeMenu}>About</NavLink>
               <NavLink className='nav-link' style={style} to='service' onClick={closeMenu}>Services</NavLink>
@@ -57,10 +60,12 @@ const NavBarLayout = () => {
       </header>
       <main>
         <Outlet />
+     
       </main>
       <footer>
         <Footer />
       </footer>
+    </div>
     </div>
   );
 }

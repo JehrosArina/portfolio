@@ -9,7 +9,7 @@ const Services = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const result = await fetchSkills();
+      const result = await fetchSkills();  // fetching the object
       setData(result.data);
     };
 

@@ -122,7 +122,8 @@ const Portfolio = () => {
         console.error('Error fetching GitHub projects:', error);
       }
     };
-
+     
+    // fetchProjects(); 
     setTimeout(fetchProjects, 2000); // Delay of 3 seconds (3000 milliseconds)
   }, []);
 

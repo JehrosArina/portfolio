@@ -1,7 +1,7 @@
 import React from 'react'
 import './Home.css'
 import { FaFacebook, FaLinkedin, FaEnvelope } from 'react-icons/fa';  // must install this  npm install react-icons to get the icons
-
+import Modal from '../Layouts/Modal';
 
 const Home = () => {
 
@@ -28,7 +28,7 @@ const Home = () => {
   
   return (
     <div className='myProfile'>
-
+   
               <div className='name'>
                 <h1 className='name'>Hi, <span className='name'>I'm Jehros Riña</span></h1>
                 <p className="typing-animation">Front-End Developer</p>
@@ -48,15 +48,16 @@ const Home = () => {
                     <a href='https://www.facebook.com/josh.mar.507679' target='blank'><span  className='links'><FaFacebook /></span></a>
                     <a href='https://www.linkedin.com/in/jehros-rina-a67770251/' target='blank'><span className='links'><FaLinkedin /></span></a>
                     <a href='https://www.linkedin.com/in/jehros-rina-a67770251/' target='blank'><span className='links'><FaEnvelope /></span></a>
-                
-             </div>
-
+              </div>    
+             
+            
             </div>    
         
 
             <div className='image'>
               <img className='imageIcon' src={imagePath} alt="My Image" />
             </div>
+            <Modal />
     </div>
   )
 }

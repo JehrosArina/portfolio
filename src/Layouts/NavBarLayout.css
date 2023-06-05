@@ -13,7 +13,8 @@
 
 .navbar-layout header h1 {
   font-size: 40px;
-  color: #0266ff;
+  color: white;
+  margin:0;
 }
 
 nav {
@@ -41,13 +42,15 @@ main {
 
 .hamburger-menu {
   display: none;
+  
+
 }
 
 
 /* Slide the logo */
 .navbar-layout header h1 {
   font-size: 40px;
-  color: #0266ff;
+  color: white;
   opacity: 0;
   animation: slide-in 1s forwards;
 }
@@ -72,20 +75,22 @@ main {
 
   .hamburger-menu {
    display: block;
-    color:yellow;
+    color:var(--Yellow);
      position: absolute;
-    right: 80px;
-    font-size: 15px;
-    top:15px;
+    right: 30px;
+    font-size: 20px;
+    top:30px;
  
     
   }
   header{
     width:300px;
     margin-left: -35px;
+   
   }
   .navbar-layout header .slide-in{
-    margin-top: -15px; 
+   padding:0;
+   margin:0;
     font-size: 30px;
     
   }
@@ -121,26 +126,30 @@ main {
   position: absolute;
   top: -20px;
   /* display slide from right to left  by setting left to 36px*/
-    left:195px;    
+    left:215px;    
     width: 450px;
     transform: translateX(100%);
     animation: slideIn 0.3s ease-in-out forwards;
     z-index: 1;
+    margin-top: 40px;
    
   
   }
    .close-button {
   font-size: 10px;
-  background-color: transparent;
+  background-color: none;
   position: absolute;
   top: 0;
-  right:100px;
+  right:60px;
   font-size: 12px;
   border-radius: 30px;
+  color:yellow;
  
 }
 
-
+.disable-swipe {
+  touch-action: pan-y; /* Allow vertical scrolling, disable horizontal swiping */
+}
 
     
 }
